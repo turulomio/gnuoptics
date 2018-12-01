@@ -1,0 +1,25 @@
+<RCC>
+  <qresource prefix="/gnuoptics">
+    <file>dialog-ok-apply.png</file>
+    <file>document-edit.png</file>
+    <file>document-preview.png</file>
+    <file>list-add-user.png</file>
+    <file>list-remove.png</file>
+    <file>tools-wizard.png</file>
+    <file>configure.png</file>
+    <file>contact-new.png</file>
+    <file>document-preview-archive.png</file>
+    <file>dinero.png</file>
+    <file>factura.png</file>
+    <file>gafas.png</file>
+    <file>open.png</file>
+    <file>save.png</file>
+    <file>exit.png</file>
+    <file>kbabel.png</file>
+    <file>keka.png</file>
+    <file>keke.png</file>
+    <file>keki.png</file>
+    <file>keko.png</file>
+    <file>star.png</file>
+  </qresource>
+</RCC>

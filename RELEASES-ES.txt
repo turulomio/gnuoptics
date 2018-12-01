@@ -1,0 +1,2 @@
+gnuoptics-0.1 <==>  svn -r 525 co https://xulpymoney.svn.sourceforge.net/svnroot/xulpymoney/xulpymoney xulpymoney 
+

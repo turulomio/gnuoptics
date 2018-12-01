@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>wdgCaja</class>
+ <widget class="QWidget" name="wdgCaja">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>779</width>
+    <height>531</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout_6">
+   <item>
+    <widget class="QTabWidget" name="tabCajas">
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="tab">
+      <attribute name="title">
+       <string>Caja diaria</string>
+      </attribute>
+      <layout class="QHBoxLayout" name="horizontalLayout_7">
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_3">
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout">
+           <item>
+            <widget class="QCalendarWidget" name="calendar">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="firstDayOfWeek">
+              <enum>Qt::Monday</enum>
+             </property>
+             <property name="verticalHeaderFormat">
+              <enum>QCalendarWidget::NoVerticalHeader</enum>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <layout class="QVBoxLayout" name="verticalLayout">
+             <item>
+              <widget class="QLabel" name="lblTotalVentas">
+               <property name="font">
+                <font>
+                 <pointsize>22</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">color:rgb(0, 192, 0)</string>
+               </property>
+               <property name="text">
+                <string>Total ventas: 0 €</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="lblTotalArticulos">
+               <property name="font">
+                <font>
+                 <pointsize>22</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">color:rgb(0, 192, 0)</string>
+               </property>
+               <property name="text">
+                <string>Total artículos: 0</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="lblTotalFacturas">
+               <property name="font">
+                <font>
+                 <pointsize>22</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">color:rgb(0, 192, 0)</string>
+               </property>
+               <property name="text">
+                <string>Total facturas: 0</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="QTabWidget" name="tabDiario">
+           <property name="tabPosition">
+            <enum>QTabWidget::West</enum>
+           </property>
+           <property name="tabShape">
+            <enum>QTabWidget::Triangular</enum>
+           </property>
+           <property name="currentIndex">
+            <number>0</number>
+           </property>
+           <widget class="QWidget" name="tab_3">
+            <attribute name="title">
+             <string>Artículos vendidos</string>
+            </attribute>
+            <layout class="QHBoxLayout" name="horizontalLayout_4">
+             <item>
+              <widget class="QTableWidget" name="tblArticulos">
+               <property name="editTriggers">
+                <set>QAbstractItemView::NoEditTriggers</set>
+               </property>
+               <property name="alternatingRowColors">
+                <bool>true</bool>
+               </property>
+               <property name="selectionMode">
+                <enum>QAbstractItemView::SingleSelection</enum>
+               </property>
+               <property name="selectionBehavior">
+                <enum>QAbstractItemView::SelectRows</enum>
+               </property>
+               <attribute name="verticalHeaderVisible">
+                <bool>false</bool>
+               </attribute>
+               <attribute name="verticalHeaderVisible">
+                <bool>false</bool>
+               </attribute>
+               <column>
+                <property name="text">
+                 <string>Id Articulos</string>
+                </property>
+               </column>
+               <column>
+                <property name="text">
+                 <string>Tipo y modelo</string>
+                </property>
+               </column>
+               <column>
+                <property name="text">
+                 <string>Cliente</string>
+                </property>
+               </column>
+               <column>
+                <property name="text">
+                 <string>Venta</string>
+                </property>
+               </column>
+               <column>
+                <property name="text">
+                 <string>Proveedor</string>
+                </property>
+               </column>
+               <column>
+                <property name="text">
+                 <string>Id Factura</string>
+                </property>
+                <property name="textAlignment">
+                 <set>AlignRight|AlignVCenter</set>
+                </property>
+               </column>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+           <widget class="QWidget" name="tab_4">
+            <attribute name="title">
+             <string>Facturas pagadas</string>
+            </attribute>
+            <layout class="QHBoxLayout" name="horizontalLayout_2">
+             <item>
+              <widget class="QTableWidget" name="tblFacturas">
+               <property name="editTriggers">
+                <set>QAbstractItemView::NoEditTriggers</set>
+               </property>
+               <property name="alternatingRowColors">
+                <bool>true</bool>
+               </property>
+               <property name="selectionMode">
+                <enum>QAbstractItemView::SingleSelection</enum>
+               </property>
+               <property name="selectionBehavior">
+                <enum>QAbstractItemView::SelectRows</enum>
+               </property>
+               <attribute name="verticalHeaderVisible">
+                <bool>false</bool>
+               </attribute>
+               <attribute name="verticalHeaderVisible">
+                <bool>false</bool>
+               </attribute>
+               <column>
+                <property name="text">
+                 <string>Id Factura</string>
+                </property>
+               </column>
+               <column>
+                <property name="text">
+                 <string>Hora</string>
+                </property>
+               </column>
+               <column>
+                <property name="text">
+                 <string>Cliente</string>
+                </property>
+               </column>
+               <column>
+                <property name="text">
+                 <string>Artículos</string>
+                </property>
+               </column>
+               <column>
+                <property name="text">
+                 <string>Venta</string>
+                </property>
+               </column>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tabAnual">
+      <attribute name="title">
+       <string>Caja anual</string>
+      </attribute>
+      <layout class="QHBoxLayout" name="horizontalLayout_5">
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_2">
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_3">
+           <item>
+            <widget class="QLabel" name="lblAnos">
+             <property name="text">
+              <string>Selecciona un año</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QComboBox" name="cmbAnos"/>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="QTableWidget" name="tblAnual">
+           <property name="editTriggers">
+            <set>QAbstractItemView::NoEditTriggers</set>
+           </property>
+           <property name="alternatingRowColors">
+            <bool>true</bool>
+           </property>
+           <property name="selectionBehavior">
+            <enum>QAbstractItemView::SelectRows</enum>
+           </property>
+           <row>
+            <property name="text">
+             <string>Enero</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>Febrero</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>Marzo</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>Abril</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>Mayo</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>Junio</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>Julio</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>Agosto</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>Septiembre</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>Octubre</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>Noviembre</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>Diciembre</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>TOTAL</string>
+            </property>
+           </row>
+           <column>
+            <property name="text">
+             <string>Valor compra</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Valor venta</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Ganancia</string>
+            </property>
+           </column>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="lbl30dias">
+           <property name="font">
+            <font>
+             <pointsize>14</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>En los últimos 30 días</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

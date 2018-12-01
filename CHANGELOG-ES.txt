@@ -1,0 +1,6 @@
+gnuoptics 0.1 XXXXXXXX
+=======================
+
+- Se ha empezado a traducir al Inglés
+
+- Funcionalidad básica
